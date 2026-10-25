@@ -10,6 +10,7 @@
 | [telemt/telemt](telemt/telemt) | Ссылка `tg://proxy` прямо в Telegram | Работает на всех устройствах, маскируется под ваш сайт | ТСПУ периодически ловит FakeTLS по отпечатку клиента Telegram, клиентам надо обновляться |
 | [xtls/xray](xtls/xray) | Ссылка `vless://` в отдельное приложение (Happ, v2RayTun, Hiddify) | Самый устойчивый к блокировкам, можно пустить через него не только Telegram | Нужно ставить отдельное приложение |
 | [nineseconds/mtg](nineseconds/mtg) | Ссылка `tg://proxy` | Минимум настроек, без домена | Маскировка под чужой домен на вашем IP — палится легче, одна ссылка на всех |
+| [telegrammessenger/proxy](telegrammessenger/proxy) | Ссылка `tg://proxy` | Официальный образ Telegram | Устарел: работает, но очень долго подключается |
 
 ### Коротко
 - **Клиенту нужно просто вставить ссылку в Telegram** → `telemt/telemt-web` для ПК и Android, `telemt/telemt` для всех остальных. Лучше держать оба: на одном сервере web, на другом обычный.
@@ -29,6 +30,6 @@
 - `./start_proxy.sh` / `./stop_proxy.sh`
 - `./add_client.sh <имя>`, `./remove_client.sh <имя>`, `./show_clients.sh` — у каждого клиента своя ссылка (кроме `mtg`)
 
-### Устаревшее
+## История
 
-- [telegrammessenger/proxy](telegrammessenger/proxy) - Работает, но очень долго подключается.
+Что и как разворачивалось на серверах — в [history/](history). Новая запись: скопировать [history/_template.md](history/_template.md) в `history/ДД-ММ-ГГ.md`.
